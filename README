@@ -1,10 +1,10 @@
-Variscite i.MX Yocto BSP
+_Yocto Sersa Board BSP_ based on Variscite i.MX Yocto BSP
 ========================
 
 Supported boards
 ----------------
-
-All of Variscite's i.MX based SOMs/boards
+_Sersa Board with LCD_
+All of Variscite's i.MX based SOMs/boards 
 
 (In addition to the FSL Community supported boards, which are listed in their release notes at
 
@@ -19,6 +19,11 @@ call:
 $: MACHINE=<machine> DISTRO=<distro> source setup-environment <build directory>
 
 After this step, you will be with everything need for build an image.
+
+)For Sersa Board Development use_:
+
+$: MACHINE=var-som-mx6-sersa DDISTRO=fslc-wayland . setup-environment build . setup-environment build
+
 
 Contributing
 ------------
@@ -70,7 +75,12 @@ The following layers are included on this release:
    Project: https://github.com/meta-qt5/meta-qt5
    GIT: git://github.com/meta-qt5/meta-qt5.git
 
- * meta-variscite-fslc: support for Variscite's i.MX based SOMs/boards
+ * meta-variscite-fslc: _support for Variscite's i.MX based SOMs/boards - Witekio FORK for sersa_
    Path: sources/meta-variscite-fslc
-   Project: https://github.com/varigit/meta-variscite-fslc
+   Project: https://bitbucket.org/adeneo-embedded/b2121-sersa-meta-variscite-fslc
    GIT: git://github.com/varigit/meta-variscite-fslc.git
+
+ * meta-sersa: _support for SERSA Board based SOMs/boards_
+   Path: sources/meta-sersa
+   Project: https://bitbucket.org/adeneo-embedded/b2121-sersa-meta-sersa
+   GIT: https://bitbucket.org/adeneo-embedded/b2121-sersa-meta-sersa
