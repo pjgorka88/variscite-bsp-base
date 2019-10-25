@@ -66,6 +66,13 @@ Examples:
     fi
 }
 
+
+TEMPLATECONF=$PWD/sources/base/conf/${MACHINE}
+echo ""
+echo "Machine: ${MACHINE}"
+echo "Distro: ${DISTRO}" 
+echo ""
+
 clean_up()
 {
    unset EULA LIST_MACHINES VALID_MACHINE
